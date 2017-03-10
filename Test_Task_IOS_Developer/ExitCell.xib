@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ExitCell" rowHeight="94" id="KGk-i7-Jjw" customClass="ExitCell" customModule="Test_Task_IOS_Developer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="94"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="94"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wHO-RP-rcG">
+                        <rect key="frame" x="0.0" y="36" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.55294117649999996" green="0.55294117649999996" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="AHb-ah-1E5"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JMz-dN-p8m">
+                        <rect key="frame" x="107" y="51" width="107" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="ISN-Ju-6se"/>
+                            <constraint firstAttribute="width" constant="107" id="vqE-b0-ebV"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                        <state key="normal" title="Не сейчас">
+                            <color key="titleColor" red="0.66274509800000003" green="0.66274509800000003" blue="0.66274509800000003" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="exitButtonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="aA6-7y-0c1"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="JMz-dN-p8m" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="5x8-vv-zjO"/>
+                    <constraint firstAttribute="trailing" secondItem="wHO-RP-rcG" secondAttribute="trailing" id="P2K-sN-2xB"/>
+                    <constraint firstItem="wHO-RP-rcG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="XqA-hz-Tl9"/>
+                    <constraint firstItem="wHO-RP-rcG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="36" id="azN-sI-K12"/>
+                    <constraint firstItem="JMz-dN-p8m" firstAttribute="top" secondItem="wHO-RP-rcG" secondAttribute="bottom" constant="14" id="tK6-Px-pWE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="33" y="62"/>
+        </tableViewCell>
+    </objects>
+</document>
