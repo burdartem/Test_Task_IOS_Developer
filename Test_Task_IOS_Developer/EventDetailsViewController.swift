@@ -34,7 +34,6 @@ class EventDetailsViewController: UIViewController {
         blurEffectView.frame = view.bounds
         blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         view.insertSubview(blurEffectView, at: 0)
-        
     }
 }
 
@@ -49,6 +48,8 @@ extension EventDetailsViewController: UITableViewDelegate, UITableViewDataSource
         
         if indexPath.row == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "HeaderImageCell", for: indexPath) as! HeaderImageCell
+            
+            cell.animateOval()
             
             return cell
         } else if indexPath.row == 1 {

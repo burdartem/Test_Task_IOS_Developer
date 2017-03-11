@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -15,12 +16,72 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="141"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="141"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="140"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background image" translatesAutoresizingMaskIntoConstraints="NO" id="BdN-c5-w0w">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="141"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="140"/>
                     </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a9p-Wf-rKg">
+                        <rect key="frame" x="113" y="8" width="94" height="94"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eeA-uI-azx" customClass="SmallOval" customModule="Test_Task_IOS_Developer" customModuleProvider="target">
+                                <rect key="frame" x="5" y="5" width="84" height="84"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Vpv-Za-ZZw">
+                                        <rect key="frame" x="22" y="30" width="39" height="39"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="axn-sh-Xg8">
+                                                <rect key="frame" x="0.0" y="0.0" width="39" height="25"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="25" id="B1W-Y1-QBf"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                                <color key="textColor" red="1" green="0.82352941176470584" blue="0.094117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="минут" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="deC-TD-DcG">
+                                                <rect key="frame" x="3" y="25" width="33.5" height="14"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="14" id="S0D-8V-5mw"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                <color key="textColor" red="1" green="0.82352941180000006" blue="0.094117647060000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="39" id="fxj-0s-nYC"/>
+                                            <constraint firstAttribute="height" constant="39" id="w8w-TW-6al"/>
+                                        </constraints>
+                                    </stackView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Small crown" translatesAutoresizingMaskIntoConstraints="NO" id="lPZ-G5-nYN">
+                                        <rect key="frame" x="25" y="5" width="35" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="U5v-zK-oYX"/>
+                                            <constraint firstAttribute="width" constant="35" id="nBi-ue-tlk"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Vpv-Za-ZZw" firstAttribute="top" secondItem="eeA-uI-azx" secondAttribute="top" constant="30" id="LNx-7d-3Us"/>
+                                    <constraint firstItem="lPZ-G5-nYN" firstAttribute="centerX" secondItem="eeA-uI-azx" secondAttribute="centerX" id="T1l-PI-mAo"/>
+                                    <constraint firstItem="Vpv-Za-ZZw" firstAttribute="centerX" secondItem="eeA-uI-azx" secondAttribute="centerX" id="TSm-a0-SNe"/>
+                                    <constraint firstItem="lPZ-G5-nYN" firstAttribute="top" secondItem="eeA-uI-azx" secondAttribute="top" constant="5" id="WHk-yr-AeJ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="94" id="3fA-0t-mKb"/>
+                            <constraint firstItem="eeA-uI-azx" firstAttribute="leading" secondItem="a9p-Wf-rKg" secondAttribute="leading" constant="5" id="4Tv-FW-7Oj"/>
+                            <constraint firstItem="eeA-uI-azx" firstAttribute="top" secondItem="a9p-Wf-rKg" secondAttribute="top" constant="5" id="5TB-mJ-0py"/>
+                            <constraint firstAttribute="trailing" secondItem="eeA-uI-azx" secondAttribute="trailing" constant="5" id="DET-Qr-o7f"/>
+                            <constraint firstAttribute="height" constant="94" id="jgN-5I-zG8"/>
+                            <constraint firstAttribute="bottom" secondItem="eeA-uI-azx" secondAttribute="bottom" constant="5" id="pR1-6S-ZxA"/>
+                        </constraints>
+                    </view>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Block of crowns" translatesAutoresizingMaskIntoConstraints="NO" id="8qQ-C8-yzs">
                         <rect key="frame" x="40" y="0.0" width="241" height="93"/>
                         <constraints>
@@ -34,15 +95,22 @@
                     <constraint firstAttribute="trailing" secondItem="BdN-c5-w0w" secondAttribute="trailing" id="G1D-dR-Uuk"/>
                     <constraint firstAttribute="bottom" secondItem="BdN-c5-w0w" secondAttribute="bottom" id="I5y-rB-Iq2"/>
                     <constraint firstItem="BdN-c5-w0w" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="MUx-MM-1Rl"/>
+                    <constraint firstItem="a9p-Wf-rKg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="egz-cV-lRj"/>
+                    <constraint firstItem="a9p-Wf-rKg" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="jGZ-Gh-8NS"/>
                     <constraint firstItem="8qQ-C8-yzs" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="vNY-di-66D"/>
                     <constraint firstItem="BdN-c5-w0w" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="xYq-TI-UN1"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="circle" destination="a9p-Wf-rKg" id="xvf-KA-xar"/>
+                <outlet property="crowns" destination="8qQ-C8-yzs" id="sfb-qQ-mPW"/>
+            </connections>
             <point key="canvasLocation" x="33" y="31.5"/>
         </tableViewCell>
     </objects>
     <resources>
         <image name="Background image" width="702" height="258"/>
         <image name="Block of crowns" width="474" height="176"/>
+        <image name="Small crown" width="110" height="106"/>
     </resources>
 </document>

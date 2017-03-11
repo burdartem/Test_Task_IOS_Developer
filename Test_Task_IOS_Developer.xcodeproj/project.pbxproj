@@ -23,6 +23,8 @@
 		CE4A56431E71ED1500BD5C0C /* EventDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4A56421E71ED1500BD5C0C /* EventDetailsViewController.swift */; };
 		CE4A56471E71FDFB00BD5C0C /* HeaderImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4A56451E71FDFB00BD5C0C /* HeaderImageCell.swift */; };
 		CE4A56481E71FDFB00BD5C0C /* HeaderImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE4A56461E71FDFB00BD5C0C /* HeaderImageCell.xib */; };
+		CE6A23AF1E748694002CC02B /* SmallOval.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6A23AE1E748694002CC02B /* SmallOval.swift */; };
+		CE6A23B41E74A274002CC02B /* GraintCircleLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6A23B31E74A274002CC02B /* GraintCircleLayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		CE4A56421E71ED1500BD5C0C /* EventDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDetailsViewController.swift; sourceTree = "<group>"; };
 		CE4A56451E71FDFB00BD5C0C /* HeaderImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderImageCell.swift; sourceTree = "<group>"; };
 		CE4A56461E71FDFB00BD5C0C /* HeaderImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderImageCell.xib; sourceTree = "<group>"; };
+		CE6A23AE1E748694002CC02B /* SmallOval.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmallOval.swift; sourceTree = "<group>"; };
+		CE6A23B31E74A274002CC02B /* GraintCircleLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraintCircleLayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,8 @@
 			isa = PBXGroup;
 			children = (
 				CE46EAC11E70517B00C07A43 /* AppDelegate.swift */,
+				CE6A23B21E74A243002CC02B /* Modals */,
+				CEF17E901E733D1200E611DD /* Views */,
 				CEF17E8C1E731B2900E611DD /* Controllers */,
 				CE4A56441E71ED2700BD5C0C /* Resources */,
 				CE4A562F1E71E3B100BD5C0C /* Cells */,
@@ -112,6 +118,14 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
+		CE6A23B21E74A243002CC02B /* Modals */ = {
+			isa = PBXGroup;
+			children = (
+				CE6A23B31E74A274002CC02B /* GraintCircleLayer.swift */,
+			);
+			name = Modals;
+			sourceTree = "<group>";
+		};
 		CEF17E8C1E731B2900E611DD /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +133,14 @@
 				CE4A56421E71ED1500BD5C0C /* EventDetailsViewController.swift */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		CEF17E901E733D1200E611DD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CE6A23AE1E748694002CC02B /* SmallOval.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,12 +222,14 @@
 			files = (
 				CE4A56321E71E59000BD5C0C /* TextCell.swift in Sources */,
 				CE4A56401E71EC3900BD5C0C /* ExitCell.swift in Sources */,
+				CE6A23B41E74A274002CC02B /* GraintCircleLayer.swift in Sources */,
 				CE4A563C1E71EAFC00BD5C0C /* ExtraCrownCell.swift in Sources */,
 				CE4A56361E71E87200BD5C0C /* CrownCell.swift in Sources */,
 				CE4A56431E71ED1500BD5C0C /* EventDetailsViewController.swift in Sources */,
 				CE4A56471E71FDFB00BD5C0C /* HeaderImageCell.swift in Sources */,
 				CE46EAC41E70517B00C07A43 /* StartViewController.swift in Sources */,
 				CE46EAC21E70517B00C07A43 /* AppDelegate.swift in Sources */,
+				CE6A23AF1E748694002CC02B /* SmallOval.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
