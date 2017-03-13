@@ -13,10 +13,10 @@ class SmallOval: UIView {
     @IBInspectable
     var scale: CGFloat = 0.90 { didSet{ setNeedsDisplay() } }
 
-    private var skullRadious: CGFloat{
+    private var radiousOval: CGFloat{
         return min(bounds.size.width, bounds.size.height)/2 * scale
     }
-    private var skullCenter: CGPoint{
+    private var centerOval: CGPoint{
         return CGPoint(x: bounds.midX, y: bounds.midY)
     }
     
@@ -38,7 +38,7 @@ class SmallOval: UIView {
     
     override func draw(_ rect: CGRect) {
 
-        pathForCircleCenteredAtPoint(midPoint: skullCenter, withRadious: skullRadious).stroke()
+        pathForCircleCenteredAtPoint(midPoint: centerOval, withRadious: radiousOval).stroke()
     
     }
 

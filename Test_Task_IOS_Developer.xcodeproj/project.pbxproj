@@ -81,7 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				CE46EAC11E70517B00C07A43 /* AppDelegate.swift */,
-				CE6A23B21E74A243002CC02B /* Modals */,
+				CE6A23B21E74A243002CC02B /* Models */,
 				CEF17E901E733D1200E611DD /* Views */,
 				CEF17E8C1E731B2900E611DD /* Controllers */,
 				CE4A56441E71ED2700BD5C0C /* Resources */,
@@ -118,12 +118,12 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		CE6A23B21E74A243002CC02B /* Modals */ = {
+		CE6A23B21E74A243002CC02B /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				CE6A23B31E74A274002CC02B /* GraintCircleLayer.swift */,
 			);
-			name = Modals;
+			name = Models;
 			sourceTree = "<group>";
 		};
 		CEF17E8C1E731B2900E611DD /* Controllers */ = {

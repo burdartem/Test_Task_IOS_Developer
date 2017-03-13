@@ -16,10 +16,10 @@ class HeaderImageCell: UITableViewCell {
     @IBInspectable
     var scale: CGFloat = 0.90 { didSet{ setNeedsDisplay() } }
     
-    private var skullRadious: CGFloat{
+    private var radiousOval: CGFloat{
         return min(circle.bounds.size.width, circle.bounds.size.height)/2 * scale
     }
-    private var skullCenter: CGPoint{
+    private var centerOval: CGPoint{
         return CGPoint(x: circle.bounds.midX, y: circle.bounds.midY)
     }
     /*
@@ -62,7 +62,7 @@ class HeaderImageCell: UITableViewCell {
     func animateOval(){
         
         let gradientRingLayer = GraintCircleLayer(bounds: CGRect(origin: CGPoint.zero,size:CGSize(width: circle.bounds.width*1.1, height: circle.bounds.height*1.1)),
-                                                  position:skullCenter,
+                                                  position:centerOval,
                                                   fromColor:UIColor(red: 255/255, green: 240/255, blue: 61/255, alpha: 1.0),
                                                   toColor:UIColor(red: 255/255, green: 170/255, blue: 61/255, alpha: 1.0),
                                                   linewidth:10.0,
