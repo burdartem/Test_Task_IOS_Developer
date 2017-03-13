@@ -93,7 +93,7 @@ extension EventDetailsViewController: UITableViewDelegate, UITableViewDataSource
         } else if indexPath.row == 4 {
             return 91.0
         } else {
-            return 94.0
+            return 63.0
         }
         
     }

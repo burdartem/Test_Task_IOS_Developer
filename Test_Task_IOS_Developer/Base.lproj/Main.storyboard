@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -58,16 +59,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="luM-Re-lA9">
-                                <rect key="frame" x="10" y="70" width="355" height="587"/>
+                                <rect key="frame" x="10" y="100" width="355" height="557"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="luM-Re-lA9" secondAttribute="height" multiplier="355:557" id="Lps-y8-HZ9"/>
+                                </constraints>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="luM-Re-lA9" firstAttribute="top" secondItem="D4S-gx-cco" secondAttribute="bottom" constant="50" id="1zr-Pp-4xy"/>
+                            <constraint firstItem="Akn-ux-Jgt" firstAttribute="top" secondItem="luM-Re-lA9" secondAttribute="bottom" constant="10" id="K1g-lj-unX"/>
                             <constraint firstAttribute="trailing" secondItem="luM-Re-lA9" secondAttribute="trailing" constant="10" id="NUK-TS-yt9"/>
                             <constraint firstItem="luM-Re-lA9" firstAttribute="leading" secondItem="SME-fG-9LL" secondAttribute="leading" constant="10" id="Qex-5S-yC8"/>
-                            <constraint firstItem="Akn-ux-Jgt" firstAttribute="top" secondItem="luM-Re-lA9" secondAttribute="bottom" constant="10" id="qy7-rd-Em4"/>
                         </constraints>
                     </view>
                     <connections>

@@ -84,9 +84,8 @@
                         </constraints>
                     </stackView>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BCA-fd-ejV">
-                        <rect key="frame" x="229" y="21" width="80" height="34"/>
+                        <rect key="frame" x="218" y="21" width="93" height="34"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="80" id="m39-bU-UFy"/>
                             <constraint firstAttribute="height" constant="34" id="yDt-Tk-URR"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -97,9 +96,10 @@
                     <constraint firstItem="dM7-cH-eUk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="C4v-SU-7LT"/>
                     <constraint firstItem="BCA-fd-ejV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="13" id="Fbf-3g-xXm"/>
                     <constraint firstItem="dM7-cH-eUk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="Ic5-W7-SLm"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="BCA-fd-ejV" secondAttribute="trailing" constant="12" id="SOb-yM-xSq"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="BCA-fd-ejV" secondAttribute="trailing" constant="10" id="SOb-yM-xSq"/>
                     <constraint firstItem="bJy-mO-ZbK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="UyA-b0-EQa"/>
                     <constraint firstAttribute="bottom" secondItem="dM7-cH-eUk" secondAttribute="bottom" constant="6" id="XwN-Ro-0yF"/>
+                    <constraint firstItem="BCA-fd-ejV" firstAttribute="leading" secondItem="bJy-mO-ZbK" secondAttribute="trailing" constant="40" id="ffB-CN-XHc"/>
                     <constraint firstItem="bJy-mO-ZbK" firstAttribute="leading" secondItem="dM7-cH-eUk" secondAttribute="trailing" constant="26" id="xOK-cJ-vXD"/>
                 </constraints>
             </tableViewCellContentView>
